@@ -64,7 +64,7 @@ public class FooterMenu {
     assertEquals("Special assistance | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'Special assistance')])[3]")).click();
     assertEquals("Special assistance | Gibraltar International Airport", driver.getTitle());
-    driver.findElement(By.linkText("Special assistance-de")).click();
+    driver.findElement(By.xpath("html/body/section[3]/div/div/div[1]/div/nav/ul/li[4]/a")).click();
     assertEquals("Special assistance | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'Customs')])[3]")).click();
     assertEquals("Customs | Gibraltar International Airport", driver.getTitle());
@@ -101,13 +101,13 @@ public class FooterMenu {
     driver.findElement(By.xpath("(//a[contains(text(),'Services')])[3]")).click();
     assertEquals("Services | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'Aviation opportunities')])[2]")).click();
-    assertEquals("Aviation opportunities | Gibraltar International Airport", driver.getTitle());
+    assertEquals("Aviation Opportunities | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'Advertising opportunities')])[3]")).click();
     assertEquals("Advertising opportunities | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'Aviation opportunities')])[3]")).click();
-    assertEquals("Aviation opportunities | Gibraltar International Airport", driver.getTitle());
+    assertEquals("Aviation Opportunities | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'Meeting rooms')])[3]")).click();
-    assertEquals("Meeting rooms | Gibraltar International Airport", driver.getTitle());
+    assertEquals("Wessex Lounge Meeting Rooms | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'News')])[2]")).click();
     assertEquals("News", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'Photos')])[3]")).click();
@@ -117,8 +117,8 @@ public class FooterMenu {
     driver.findElement(By.xpath("(//a[contains(text(),'Useful Gibraltar links')])[3]")).click();
     assertEquals("Useful Gibraltar links | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.xpath("(//a[contains(text(),'Gibraltar government links')])[3]")).click();
-    assertEquals("Gibraltar government links | Gibraltar International Airport", driver.getTitle());
-    driver.findElement(By.xpath("(//a[contains(text(),'Contact us')])[2]")).click();
+    assertEquals("Gibraltar Government Links | Gibraltar International Airport", driver.getTitle());
+    driver.findElement(By.xpath("//a[contains(@href, '/content/contact-us')]")).click();
     assertEquals("Contact us | Gibraltar International Airport", driver.getTitle());
     driver.findElement(By.cssSelector("img[alt=\"Gibraltar International Airport\"]")).click();
     assertEquals("Gibraltar International Airport", driver.getTitle());
