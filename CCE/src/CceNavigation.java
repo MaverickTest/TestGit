@@ -25,7 +25,8 @@ public class CceNavigation {
 
   @Test
   public void testUntitled() throws Exception {
-    driver.get("http://cceambassador.dev02.maverick.local/login/?redirect_to=http://cceambassador.dev02.maverick.local/");
+    //driver.get("http://cceambassador.dev02.maverick.local/login/?redirect_to=http://cceambassador.dev02.maverick.local/");
+    driver.get("http://www.cceambassador.com/login/");
     assertEquals("Login | CCE Ambassador Site", driver.getTitle());
     driver.findElement(By.name("pwd")).clear();
     driver.findElement(By.name("pwd")).sendKeys(")#(b8@r@.L=;p-K");

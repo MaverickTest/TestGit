@@ -25,7 +25,8 @@ public class LegacyTest {
 
   @Test
   public void testUntitled2() throws Exception {
-    driver.get("http://cceambassador.dev02.maverick.local/login/");
+    //driver.get("http://cceambassador.dev02.maverick.local/login/");
+    driver.get("http://www.cceambassador.com/login/");
     assertEquals("Login | CCE Ambassador Site", driver.getTitle());
     driver.findElement(By.name("pwd")).clear();
     driver.findElement(By.name("pwd")).sendKeys("refresh2020");
